@@ -21,10 +21,11 @@ class _ProdukDetailState extends State<ProdukDetail> {
     return Scaffold(
       appBar: AppBar(title: Text('Detail Produk')),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("Kode Produk : " + widget.kodeProduk),
-          Text("Nama Produk :  ${widget.namaProduk}"),
-          Text("Harga :   ${widget.harga.toString()}"),
+          Text("Kode Produk : ${widget.kodeProduk}"),
+          Text("Nama Produk : ${widget.namaProduk}"),
+          Text("Harga        : ${widget.harga}"),
         ],
       ),
     );
